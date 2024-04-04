@@ -18,6 +18,7 @@
     "test:controllers": "yarn workspace @project/controllers run test",
     "test:domain": "yarn workspace @project/domain run test",
     "test:infra": "yarn workspace @project/infra run test",
+    "test:service": "yarn workspace @project/service run test",
     "test:e2e": "yarn workspace @project/lambda run test:e2e",
     "lint": "eslint '**/*.{ts,js}'",
     "lint:fix": "eslint '**/*.{ts,js}' --fix",
