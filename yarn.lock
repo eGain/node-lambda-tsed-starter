@@ -1261,6 +1261,7 @@ __metadata:
     typescript: "npm:5.4.3"
     vitest: "npm:^1.6.0"
   peerDependencies:
+    "@project/service": "workspace:*"
     "@tsed/ajv": ^7.67.0
     "@tsed/core": ^7.67.0
     "@tsed/di": ^7.67.0
@@ -1414,7 +1415,6 @@ __metadata:
     uuid: "npm:^9.0.1"
     vitest: "npm:^1.4.0"
   peerDependencies:
-    "@project/service": "workspace:*"
     "@tsed/ajv": ^7.67.0
     "@tsed/core": ^7.67.0
     "@tsed/di": ^7.67.0
