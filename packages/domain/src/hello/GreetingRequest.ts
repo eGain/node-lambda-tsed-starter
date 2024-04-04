@@ -1,4 +1,4 @@
-import { Default, Example, Required } from "@tsed/schema"
+import { Example, Required } from "@tsed/schema"
 
 export class GreetingRequest {
   @Required()
@@ -6,8 +6,7 @@ export class GreetingRequest {
   name: string
 
   @Required(false)
-  @Default(2)
-  count: number = 2
+  count: number = 1
 
   @Required(false)
   additionalMsg: string = ""
