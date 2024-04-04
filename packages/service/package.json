@@ -1,13 +1,8 @@
 {
-  "name": "@project/controllers",
+  "name": "@project/service",
   "version": "1.0.0",
   "type": "module",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "source": "./src/index.ts",
-      "default": "./dist/index.js"
-    },
     "./*.js": {
       "types": "./dist/*.d.ts",
       "source": "./src/*.ts",
@@ -17,15 +12,17 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "tsc --build tsconfig.node.json"
+    "build": "tsc --build tsconfig.json"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "tslib": "2.6.2",
     "typescript": "5.4.3",
-    "vitest": "^1.6.0"
+    "vitest": "^1.4.0"
   },
   "peerDependencies": {
-    "@project/service": "workspace:*",
     "@tsed/ajv": "^7.67.0",
     "@tsed/core": "^7.67.0",
     "@tsed/di": "^7.67.0",
