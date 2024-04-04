@@ -1261,6 +1261,7 @@ __metadata:
     typescript: "npm:5.4.3"
     vitest: "npm:^1.6.0"
   peerDependencies:
+    "@project/service": "workspace:*"
     "@tsed/ajv": ^7.67.0
     "@tsed/core": ^7.67.0
     "@tsed/di": ^7.67.0
@@ -1407,6 +1408,28 @@ __metadata:
     unplugin-swc: "npm:^1.4.4"
     uuid: "npm:^9.0.1"
     vitest: "npm:^1.6.0"
+  languageName: unknown
+  linkType: soft
+
+"@project/service@workspace:packages/service":
+  version: 0.0.0-use.local
+  resolution: "@project/service@workspace:packages/service"
+  dependencies:
+    tslib: "npm:2.6.2"
+    typescript: "npm:5.4.3"
+    uuid: "npm:^9.0.1"
+    vitest: "npm:^1.4.0"
+  peerDependencies:
+    "@tsed/ajv": ^7.67.0
+    "@tsed/core": ^7.67.0
+    "@tsed/di": ^7.67.0
+    "@tsed/engines": ^7.67.0
+    "@tsed/exceptions": ^7.67.0
+    "@tsed/json-mapper": ^7.67.0
+    "@tsed/logger": ^6.7.5
+    "@tsed/openspec": ^7.67.0
+    "@tsed/schema": ^7.67.0
+    "@tsed/swagger": ^7.67.0
   languageName: unknown
   linkType: soft
 
