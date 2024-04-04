@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "moduleResolution": "nodeNext",
+    "module": "nodeNext",
+    "noEmit": true,
+    "declaration": false,
+    "types": ["vitest/globals", "vitest/importMeta", "vite/client", "node", "vitest"]
+  },
+  "include": ["vitest.config.mts", "src/**/*.spec.ts"],
+  "exclude": ["dist"]
+}
