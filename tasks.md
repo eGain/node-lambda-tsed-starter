@@ -1,3 +1,9 @@
+## TODO
+### Handle updates to build artifacts after code change
+Right now, if I modify a domain object it will not show in Swagger UI. Seems that the flow is to compile and restart the server.
+Do we need a global build for dev mode script? 
+Can the watch scope of the server be modified?
+
 ## Reduce build size
 
 ### Look at:
