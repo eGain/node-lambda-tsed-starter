@@ -15,6 +15,7 @@
     "build": "tsc --build tsconfig.json"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.549.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
