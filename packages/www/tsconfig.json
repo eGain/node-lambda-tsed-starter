@@ -14,6 +14,15 @@
   "include": [],
   "references": [
     {
+      "path": "../infra"
+    },
+    {
+      "path": "../controllers"
+    },
+    {
+      "path": "../domain"
+    },
+    {
       "path": "./tsconfig.node.json"
     },
     {
