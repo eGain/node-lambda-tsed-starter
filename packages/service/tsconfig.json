@@ -16,6 +16,12 @@
   "include": [],
   "references": [
     {
+      "path": "../domain/tsconfig.json"
+    },
+    {
+      "path": "../infra/tsconfig.json"
+    },
+    {
       "path": "./tsconfig.node.json"
     },
     {

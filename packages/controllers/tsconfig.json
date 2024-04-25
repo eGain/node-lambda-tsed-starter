@@ -19,6 +19,9 @@
       "path": "../infra"
     },
     {
+      "path": "../service"
+    },
+    {
       "path": "../domain"
     },
     {
