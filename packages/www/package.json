@@ -8,7 +8,7 @@
     "test:watch": "vitest",
     "build": "tsc --project tsconfig.node.json",
     "build:swagger": "yarn tsed run generate-swagger --production --output ./specs",
-    "start": "node --import @swc-node/register/esm-register src/index.ts"
+    "start": "nodemon src/index.ts"
   },
   "dependencies": {
     "@project/controllers": "workspace:*",
@@ -55,7 +55,7 @@
     "@types/express": "^4.17.21",
     "@types/method-override": "^0.0.35",
     "@types/multer": "^1.4.11",
-    "node-dev": "8.0.0",
+    "nodemon": "3.1.0",
     "supertest": "^6.3.4",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",

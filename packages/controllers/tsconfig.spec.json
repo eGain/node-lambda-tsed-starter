@@ -11,17 +11,11 @@
     "types": [
       "vitest/globals",
       "vitest/importMeta",
+      "vite/client",
       "node",
-      "esbuild",
       "vitest"
     ]
   },
-  "include": [
-    "tsup.config.ts",
-    "vitest.config.ts",
-    "vitest.config.e2e.mts",
-    "src/**/*.spec.ts",
-    "src/**/*.e2e.ts"
-  ],
-  "exclude": ["dist", ".esbuild"]
+  "include": ["vitest.config.mts", "src/**/*.spec.ts"],
+  "exclude": ["dist"]
 }

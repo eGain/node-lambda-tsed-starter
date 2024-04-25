@@ -1,0 +1,9 @@
+{
+  "extensions": ["ts"],
+  "watch": ["src", "../controllers", "../domain", "../infra"],
+  "ignore": ["**/*.spec.ts"],
+  "delay": 100,
+  "execMap": {
+    "ts": "yarn tsc --build && node --import @swc-node/register/esm-register"
+  }
+}
