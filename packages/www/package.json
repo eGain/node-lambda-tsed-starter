@@ -7,7 +7,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "build": "tsc --project tsconfig.node.json",
-    "build:swagger": "yarn tsed run generate-swagger --production --output ./specs",
+    "build:swagger": "yarn build && yarn tsed run generate-swagger --production --output ./specs",
     "start": "nodemon src/index.ts"
   },
   "dependencies": {
