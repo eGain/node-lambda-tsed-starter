@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "postinstall": "tsc --build",
-    "clean": "rimraf packages/*/*.tsbuildinfo packages/*/dist",
+    "clean": "rimraf packages/*/*.tsbuildinfo packages/*/dist && yarn build",
+    "build": "tsc --build",
     "build:swagger": "yarn workspace @project/www run build:swagger",
     "build:lambda": "yarn workspace @project/lambda run build",
     "deploy:lambda": "yarn workspace @project/lambda run build:deploy",
