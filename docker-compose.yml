@@ -1,4 +1,7 @@
 version: "3.8"
+networks:
+  app_network:
+    driver: bridge
 
 services:
   localstack:
@@ -15,8 +18,20 @@ services:
       - "${LOCALSTACK_VOLUME_DIR:-./.volume}:/var/lib/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
     networks:
-      - localstack
+      - app_network
 
-networks:
-  localstack:
-    driver: bridge
+  mockserver:
+    image: mockserver/mockserver:mockserver-5.15.0
+    container_name: mockserver
+    ports:
+      - "1080:1080"
+    environment:
+      - MOCKSERVER_WATCH_INITIALIZATION_JSON=true
+      - MOCKSERVER_INITIALIZATION_JSON_PATH=/config/*.json
+      - LOG_LEVEL_DEBUG=true
+    volumes:
+      - type: bind
+        source: ./mockserver
+        target: /config
+    networks:
+      - app_network
