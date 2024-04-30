@@ -9,10 +9,8 @@
     "build": "tsup --config tsup.config.ts",
     "build:deploy": "tsup --config tsup.config.ts -- --deploy",
     "watch": "tsup --config tsup.config.ts --watch",
-    "start": "concurrently \"yarn start:localstack\" \"yarn watch\" --names docker,esbuild -c green,blue",
-    "check:localstack": "localstack config validate",
-    "start:localstack": "docker compose up",
-    "stop:localstack": "docker compose down"
+    "start": "yarn watch",
+    "check:localstack": "localstack config validate"
   },
   "dependencies": {
     "@project/controllers": "workspace:*",

@@ -129,11 +129,11 @@ jobs:
         run: yarn install --immutable --network-timeout 500000
       - uses: hashicorp/setup-terraform@v3
       - name: Start localstack 🚧
-        run: yarn run start:localstack -d
+        run: yarn run start:docker -d
       - name: Build & Deploy lambda 🚧
         run: yarn deploy:lambda
       - name: Run test 🔍
         run: yarn test:e2e
       - name: Stop containers
         if: always()
-        run: yarn stop:localstack
+        run: yarn stop:docker
