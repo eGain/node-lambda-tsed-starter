@@ -1,0 +1,17 @@
+[
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/hello"
+    },
+    "httpResponse": {
+      "body": {
+        "type": "JSON",
+        "json": {
+          "message": "this is mockserver"
+        },
+        "contentType": "application/json"
+      }
+    }
+  }
+]
