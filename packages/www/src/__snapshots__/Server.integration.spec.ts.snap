@@ -24,6 +24,26 @@ exports[`Server > should generate swagger.json 1`] = `
         ],
         "type": "object",
       },
+      "GreetingRequest": {
+        "properties": {
+          "additionalMsg": {
+            "type": "string",
+          },
+          "count": {
+            "default": 2,
+            "type": "number",
+          },
+          "name": {
+            "example": "John",
+            "minLength": 1,
+            "type": "string",
+          },
+        },
+        "required": [
+          "name",
+        ],
+        "type": "object",
+      },
       "NotFound": {
         "properties": {
           "errors": {
@@ -199,6 +219,65 @@ exports[`Server > should generate swagger.json 1`] = `
   },
   "openapi": "3.1.0",
   "paths": {
+    "/hello": {
+      "get": {
+        "operationId": "helloControllerGet",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "name",
+            "required": false,
+            "schema": {
+              "type": "string",
+            },
+          },
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string",
+                },
+              },
+            },
+            "description": "Success",
+          },
+        },
+        "tags": [
+          "HelloController",
+        ],
+      },
+      "post": {
+        "operationId": "helloControllerPost",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GreetingRequest",
+              },
+            },
+          },
+          "required": false,
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                },
+              },
+            },
+            "description": "Success",
+          },
+        },
+        "tags": [
+          "HelloController",
+        ],
+      },
+    },
     "/timeslots": {
       "get": {
         "operationId": "timeslotsControllerGetTimeslots",
@@ -344,6 +423,9 @@ exports[`Server > should generate swagger.json 1`] = `
     },
   },
   "tags": [
+    {
+      "name": "HelloController",
+    },
     {
       "name": "TimeslotsController",
     },
