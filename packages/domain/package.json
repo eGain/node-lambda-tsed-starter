@@ -15,8 +15,8 @@
     "build": "tsc --build tsconfig.json"
   },
   "devDependencies": {
-    "tslib": "2.6.2",
-    "typescript": "5.4.3",
+    "tslib": "2.6.3",
+    "typescript": "5.4.5",
     "vitest": "^1.6.0"
   },
   "peerDependencies": {
