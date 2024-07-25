@@ -11,7 +11,8 @@ const config = {
   envs: process.env,
   lambda: [TimeslotsController],
   logger: {
-    level: "info" as never
+    level: "info" as never,
+    requestFields: ["reqId", "method", "url", "duration", "route", "aws_event", "aws_context"]
   },
   timeslots: {
     // Not applicable here because lambda are packaged and deployed on AWS.
