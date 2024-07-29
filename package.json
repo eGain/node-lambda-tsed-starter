@@ -10,7 +10,7 @@
     "deploy:lambda": "yarn workspace @project/lambda run build:deploy",
     "start:www": "yarn workspace @project/www run start",
     "start:lambda": "concurrently \"yarn start:docker\" \"yarn workspace @project/lambda run start\" --names docker,esbuild -c green,blue",
-    "start:docker": "dotenv-flow docker compose up",
+    "start:docker": "dotenv-flow docker compose up -- -d",
     "stop:docker": "docker compose down",
     "test": "vitest run",
     "test:watch": "vitest run",

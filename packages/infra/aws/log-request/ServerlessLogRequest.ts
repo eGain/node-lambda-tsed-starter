@@ -50,7 +50,6 @@ export class ServerlessLogRequest {
 
     if (logEnd) {
       if ($ctx.response.statusCode >= 400) {
-        console.log("===>", $ctx.error)
         $ctx.logger.error({
           event: "request.end",
           status: $ctx.response.statusCode,
@@ -118,7 +117,9 @@ export class ServerlessLogRequest {
       headers: request.headers,
       body: request.body,
       query: request.query,
-      params: request.params
+      params: request.params,
+      aws_event: ctx.event,
+      aws_context: ctx.context
     }
   }
 
