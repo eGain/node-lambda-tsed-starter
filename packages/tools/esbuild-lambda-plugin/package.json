@@ -24,9 +24,9 @@
   },
   "devDependencies": {
     "@types/cross-zip": "4.0.2",
-    "@types/node": "20.14.11",
-    "change-case": "^5.4.3",
-    "esbuild": "0.20.2",
+    "@types/node": "20.17.4",
+    "change-case": "^5.4.4",
+    "esbuild": "0.24.0",
     "execa": "8.0.1",
     "fs-extra": "11.2.0",
     "tsup": "8.1.0"

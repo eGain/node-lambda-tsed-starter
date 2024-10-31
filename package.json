@@ -31,13 +31,13 @@
     "dotenv-expand": "^11.0.6",
     "dotenv-flow": "^4.1.0",
     "dotenv-flow-cli": "^1.1.1",
-    "uuid": "^9.0.1"
+    "uuid": "^11.0.2"
   },
   "devDependencies": {
-    "@swc/core": "1.7.0",
+    "@swc/core": "1.7.42",
     "@tsed/eslint-plugin": "1.1.11",
-    "@types/lodash": "^4.17.7",
-    "@types/node": "^20.14.11",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^20.17.4",
     "@types/supertest": "^6.0.2",
     "@types/url-parse": "1.4.11",
     "@types/uuid": "^9.0.8",
@@ -51,14 +51,14 @@
     "eslint-plugin-workspaces": "0.10.0",
     "husky": "^9.0.11",
     "is-ci": "^3.0.1",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
-    "tslib": "^2.6.3",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "rimraf": "^5.0.10",
+    "tslib": "^2.8.0",
     "tsup": "8.1.0",
-    "typescript": "^5.4.5",
-    "unplugin-swc": "^1.4.5",
-    "vitest": "^1.6.0"
+    "typescript": "^5.6.3",
+    "unplugin-swc": "^1.5.1",
+    "vitest": "^2.1.4"
   },
   "tsed": {
     "convention": "conv_default",
