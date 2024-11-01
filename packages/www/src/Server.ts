@@ -3,7 +3,8 @@ import "@tsed/ajv"
 import "@tsed/swagger"
 
 import * as controllers from "@project/controllers/index.js"
-import { Configuration, Inject, InjectorService } from "@tsed/di"
+import { Configuration } from "@tsed/di"
+import { PlatformLogMiddleware } from "@tsed/platform-log-middleware"
 import { join } from "path"
 
 import { config } from "./config/index.js"
@@ -28,7 +29,8 @@ import * as pages from "./controllers/pages/index.js"
     "compression",
     "method-override",
     "json-parser",
-    { use: "urlencoded-parser", options: { extended: true } }
+    { use: "urlencoded-parser", options: { extended: true } },
+    PlatformLogMiddleware
   ],
   views: {
     root: join(process.cwd(), "../views"),
@@ -37,7 +39,4 @@ import * as pages from "./controllers/pages/index.js"
     }
   }
 })
-export class Server {
-  @Inject()
-  injector: InjectorService
-}
+export class Server {}
