@@ -23,7 +23,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "useDefineForClassFields": true,
+    "useDefineForClassFields": false,
     "lib": ["ESNext", "dom", "ESNext.AsyncIterable"]
   },
   "exclude": ["node_modules"]
