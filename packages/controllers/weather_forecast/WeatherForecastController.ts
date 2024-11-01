@@ -1,7 +1,7 @@
 import { WeatherForecast } from "@project/domain/weather_forecast/WeatherForecast.js"
 import { WeatherForecastClient } from "@project/infra/weather_forecast/WeatherForecastClient.js"
-import { QueryParams } from "@tsed/common"
 import { Controller, Inject } from "@tsed/di"
+import { QueryParams } from "@tsed/platform-params"
 import { Get, MaxLength, MinLength, Required, Returns } from "@tsed/schema"
 
 @Controller("/weather_forecast")

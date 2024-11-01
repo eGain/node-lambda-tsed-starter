@@ -1670,7 +1670,6 @@ __metadata:
     "@tsed/cli-plugin-eslint": "npm:6.0.0-rc.1"
     "@tsed/cli-plugin-vitest": "npm:6.0.0-rc.1"
     "@tsed/cli-testing": "npm:6.0.0-rc.1"
-    "@tsed/common": "npm:8.0.0-rc.2"
     "@tsed/core": "npm:8.0.0-rc.2"
     "@tsed/di": "npm:8.0.0-rc.2"
     "@tsed/engines": "npm:8.0.0-rc.2"
@@ -1726,6 +1725,7 @@ __metadata:
     "@tsed/json-mapper": ^7.67.0
     "@tsed/logger": ^6.7.5
     "@tsed/openspec": ^7.67.0
+    "@tsed/platform-params": ^7.67.0
     "@tsed/schema": ^7.67.0
     "@tsed/swagger": ^7.67.0
   languageName: unknown
@@ -1898,7 +1898,6 @@ __metadata:
     "@tsed/cli-generate-swagger": "npm:^6.0.0-rc.1"
     "@tsed/cli-plugin-eslint": "npm:6.0.0-rc.1"
     "@tsed/cli-plugin-vitest": "npm:6.0.0-rc.1"
-    "@tsed/common": "npm:8.0.0-rc.2"
     "@tsed/core": "npm:8.0.0-rc.2"
     "@tsed/di": "npm:8.0.0-rc.2"
     "@tsed/engines": "npm:8.0.0-rc.2"
@@ -1908,6 +1907,7 @@ __metadata:
     "@tsed/openspec": "npm:8.0.0-rc.2"
     "@tsed/platform-exceptions": "npm:8.0.0-rc.2"
     "@tsed/platform-express": "npm:^8.0.0-rc.2"
+    "@tsed/platform-http": "npm:8.0.0-rc.2"
     "@tsed/platform-log-middleware": "npm:8.0.0-rc.2"
     "@tsed/platform-middlewares": "npm:8.0.0-rc.2"
     "@tsed/platform-params": "npm:8.0.0-rc.2"
@@ -3289,24 +3289,6 @@ __metadata:
   bin:
     tsed: lib/esm/bin/tsed.js
   checksum: 10c0/a87046552dc82a46946d636d0f2c92ed78724d27ebe70659bef1558afa3ad40b5608116faf8571cf05b5b4f300d7b349fce45e5642e64e9025a5c16d586d1ccd
-  languageName: node
-  linkType: hard
-
-"@tsed/common@npm:8.0.0-rc.2":
-  version: 8.0.0-rc.2
-  resolution: "@tsed/common@npm:8.0.0-rc.2"
-  dependencies:
-    "@tsed/platform-http": "npm:8.0.0-rc.2"
-    tslib: "npm:2.7.0"
-  peerDependencies:
-    "@tsed/logger": ">=6.7.5"
-    "@tsed/logger-file": ">=6.7.5"
-  peerDependenciesMeta:
-    "@tsed/logger":
-      optional: false
-    "@tsed/logger-file":
-      optional: false
-  checksum: 10c0/206d81438cabd3726a53ed5e95e93afc0240c3987d65018e5314bce3b38f191b27a54f955334a759621cc154126d62b883542e74d3d05109ac6334bf927f8a57
   languageName: node
   linkType: hard
 

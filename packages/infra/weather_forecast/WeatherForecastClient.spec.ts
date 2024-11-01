@@ -1,4 +1,4 @@
-import { PlatformTest } from "@tsed/common"
+import { PlatformTest } from "@tsed/platform-http/testing"
 
 import weatherForecastFixture from "./__fixtures__/weekly_weather_forecast.json" assert { type: "json" }
 import { WeatherForecastClient } from "./WeatherForecastClient.js"

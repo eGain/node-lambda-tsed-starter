@@ -22,6 +22,7 @@
     "@tsed/json-mapper": "^7.67.0",
     "@tsed/logger": "^6.7.5",
     "@tsed/openspec": "^7.67.0",
+    "@tsed/platform-params": "^7.67.0",
     "@tsed/schema": "^7.67.0",
     "@tsed/swagger": "^7.67.0"
   }

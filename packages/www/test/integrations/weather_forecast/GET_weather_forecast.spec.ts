@@ -1,4 +1,4 @@
-import { PlatformTest } from "@tsed/common"
+import { PlatformTest } from "@tsed/platform-http/testing"
 import SuperTest from "supertest"
 import { afterAll, beforeAll } from "vitest"
 

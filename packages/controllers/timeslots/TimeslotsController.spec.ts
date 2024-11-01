@@ -2,11 +2,11 @@ import { Timeslot } from "@project/domain/timeslots/Timeslot.js"
 import { UserInfo } from "@project/domain/users/UserInfo.js"
 import { JwtService } from "@project/infra/auth/services/JwtService.js"
 import { TimeslotsRepository } from "@project/infra/timeslots/TimeslotsRepository.js"
-import { PlatformTest, runInContext } from "@tsed/common"
 import { catchAsyncError } from "@tsed/core"
-import { DITest } from "@tsed/di" // we use DITest to be agnostic with the Serverless/Web platform as much is possible
+import { DITest, runInContext } from "@tsed/di" // we use DITest to be agnostic with the Serverless/Web platform as much is possible
 import { NotFound } from "@tsed/exceptions"
 import { deserialize } from "@tsed/json-mapper"
+import { PlatformTest } from "@tsed/platform-http/testing"
 import { getSpec, SpecTypes } from "@tsed/schema"
 
 import { TimeslotsController } from "./TimeslotsController.js"

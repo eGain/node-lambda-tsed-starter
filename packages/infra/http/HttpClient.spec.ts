@@ -1,7 +1,7 @@
-import { PlatformTest, runInContext } from "@tsed/common"
 import { catchAsyncError } from "@tsed/core"
-import { Injectable } from "@tsed/di"
+import { Injectable, runInContext } from "@tsed/di"
 import { Exception } from "@tsed/exceptions"
+import { PlatformTest } from "@tsed/platform-http/testing"
 import { Property, Required } from "@tsed/schema"
 
 import { HttpClient } from "./HttpClient.js"

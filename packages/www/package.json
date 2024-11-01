@@ -14,7 +14,6 @@
   "dependencies": {
     "@project/controllers": "workspace:*",
     "@tsed/ajv": "8.0.0-rc.2",
-    "@tsed/common": "8.0.0-rc.2",
     "@tsed/core": "8.0.0-rc.2",
     "@tsed/di": "8.0.0-rc.2",
     "@tsed/engines": "8.0.0-rc.2",
@@ -23,6 +22,7 @@
     "@tsed/logger": "6.7.5",
     "@tsed/openspec": "8.0.0-rc.2",
     "@tsed/platform-exceptions": "8.0.0-rc.2",
+    "@tsed/platform-http": "8.0.0-rc.2",
     "@tsed/platform-log-middleware": "8.0.0-rc.2",
     "@tsed/platform-middlewares": "8.0.0-rc.2",
     "@tsed/platform-params": "8.0.0-rc.2",

@@ -17,7 +17,6 @@
     "@project/controllers": "workspace:*",
     "@tsed/ajv": "8.0.0-rc.2",
     "@tsed/cli-core": "6.0.0-rc.1",
-    "@tsed/common": "8.0.0-rc.2",
     "@tsed/core": "8.0.0-rc.2",
     "@tsed/di": "8.0.0-rc.2",
     "@tsed/engines": "8.0.0-rc.2",

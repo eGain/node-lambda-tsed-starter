@@ -1,5 +1,5 @@
-import type { PlatformContext } from "@tsed/common"
 import { DIContext, Inject, Injectable, InjectContext } from "@tsed/di"
+import type { PlatformContext } from "@tsed/platform-http"
 import type { ServerlessContext } from "@tsed/platform-serverless"
 
 import { JwtService } from "./JwtService.js"

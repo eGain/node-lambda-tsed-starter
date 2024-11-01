@@ -1,6 +1,6 @@
 import { WeatherForecastClient } from "@project/infra/weather_forecast/WeatherForecastClient.js"
-import { PlatformTest } from "@tsed/common"
 import { DITest } from "@tsed/di"
+import { PlatformTest } from "@tsed/platform-http/testing"
 
 import { WeatherForecastController } from "./WeatherForecastController.js"
 
