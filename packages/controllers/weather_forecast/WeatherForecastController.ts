@@ -10,7 +10,7 @@ export class WeatherForecastController {
   protected client: WeatherForecastClient
 
   @Get("/")
-  @Returns(200, Array).Of(WeatherForecast)
+  @(Returns(200, Array).Of(WeatherForecast))
   getWeaklyForecast(@Required() @MinLength(2) @MaxLength(10) @QueryParams("city") city: string) {
     return this.client.getWeeklyForecast(city)
   }
