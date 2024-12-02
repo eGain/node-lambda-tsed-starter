@@ -1,10 +1,10 @@
 import "@tsed/platform-express" // /!\ keep this import
 import "@tsed/ajv"
 import "@tsed/swagger"
+import "@tsed/platform-log-request"
 
 import * as controllers from "@project/controllers/index.js"
 import { Configuration } from "@tsed/di"
-import { PlatformLogMiddleware } from "@tsed/platform-log-middleware"
 import { join } from "path"
 
 import { config } from "./config/index.js"
@@ -29,8 +29,7 @@ import * as pages from "./controllers/pages/index.js"
     "compression",
     "method-override",
     "json-parser",
-    { use: "urlencoded-parser", options: { extended: true } },
-    PlatformLogMiddleware
+    { use: "urlencoded-parser", options: { extended: true } }
   ],
   views: {
     root: join(process.cwd(), "../views"),
