@@ -1,6 +1,6 @@
 import { UserInfo } from "@project/domain/users/UserInfo.js"
-import { PlatformTest, runInContext } from "@tsed/common"
-import { DIContext, DITest } from "@tsed/di"
+import { DIContext, DITest, runInContext } from "@tsed/di"
+import { PlatformTest } from "@tsed/platform-http/testing"
 import { ServerlessContext } from "@tsed/platform-serverless"
 import { beforeEach } from "vitest"
 

@@ -1,7 +1,7 @@
 import { UserInfo } from "@project/domain/users/UserInfo.js"
 import { JwtService } from "@project/infra/auth/services/JwtService.js"
-import { PlatformTest } from "@tsed/common"
 import { DITest } from "@tsed/di"
+import { PlatformTest } from "@tsed/platform-http/testing"
 import { ServerlessContext, ServerlessResponse } from "@tsed/platform-serverless"
 
 import { AuthorizeServerlessContext, LambdaAuthorizerController } from "./LambdaAuthorizerController.js"

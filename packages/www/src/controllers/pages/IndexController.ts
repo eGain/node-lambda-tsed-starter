@@ -12,7 +12,7 @@ export class IndexController {
 
   @Get("/")
   @View("swagger.ejs")
-  @Returns(200, String).ContentType("text/html")
+  @(Returns(200, String).ContentType("text/html"))
   get(@HeaderParams("x-forwarded-proto") protocol: string, @HeaderParams("host") host: string) {
     const hostUrl = `${protocol || "http"}://${host}`
 

@@ -6,7 +6,7 @@
   "typings": "src/index.ts",
   "type": "module",
   "devDependencies": {
-    "@aws-sdk/client-lambda": "^3.616.0",
+    "@aws-sdk/client-lambda": "^3.682.0",
     "@faker-js/faker": "8.4.1",
     "execa": "8.0.1",
     "supertest": "7.0.0"

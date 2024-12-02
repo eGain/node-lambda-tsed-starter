@@ -1,4 +1,5 @@
-import { $log, PlatformLoggerSettings } from "@tsed/common"
+import { DILoggerOptions } from "@tsed/di"
+import { $log } from "@tsed/logger"
 
 import { isProduction } from "../envs/index.js"
 
@@ -20,6 +21,6 @@ if (isProduction) {
   })
 }
 
-export default <PlatformLoggerSettings>{
+export default <DILoggerOptions>{
   disableRoutesSummary: isProduction
 }

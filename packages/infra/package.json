@@ -8,18 +8,18 @@
     "build": "tsc --build tsconfig.json"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "3.616.0",
-    "@aws-sdk/lib-dynamodb": "3.616.0",
-    "axios": "1.7.1",
-    "jose": "5.4.1",
+    "@aws-sdk/client-dynamodb": "3.682.0",
+    "@aws-sdk/lib-dynamodb": "3.682.0",
+    "axios": "1.7.7",
+    "jose": "5.9.6",
     "lodash": "4.17.21",
     "url-parse": "1.5.10",
-    "uuid": "^9.0.1"
+    "uuid": "^11.0.2"
   },
   "devDependencies": {
-    "tslib": "2.6.3",
-    "typescript": "5.4.5",
-    "vitest": "^1.6.0"
+    "tslib": "2.8.0",
+    "typescript": "5.6.3",
+    "vitest": "^2.1.4"
   },
   "peerDependencies": {
     "@project/infra": "workspace:*",

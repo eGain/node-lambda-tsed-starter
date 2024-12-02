@@ -12,7 +12,7 @@ export class TimeslotsController {
   protected repository: TimeslotsRepository
 
   @Get("/")
-  @Returns(200, Array).Of(Timeslot)
+  @(Returns(200, Array).Of(Timeslot))
   @Authorize({ scopes: ["timeslots"] })
   async getTimeslots() {
     return this.repository.getAll()
@@ -20,7 +20,7 @@ export class TimeslotsController {
 
   @Get("/:id")
   @Returns(200, Timeslot)
-  @Returns(404).Description("Timeslot not found")
+  @(Returns(404).Description("Timeslot not found"))
   @Authorize({ scopes: ["timeslots"] })
   async getTimeslotById(@PathParams("id") @Format(JsonFormatTypes.UUID) id: string) {
     const result = await this.repository.getById(id)
@@ -41,7 +41,7 @@ export class TimeslotsController {
 
   @Put("/:id")
   @Returns(200, Timeslot)
-  @Returns(404).Description("Timeslot not found")
+  @(Returns(404).Description("Timeslot not found"))
   @Authorize({ scopes: ["timeslots"] })
   async updateTimeslot(@PathParams("id") @Format(JsonFormatTypes.UUID) id: string, @BodyParams() @Groups("update") payload: Timeslot) {
     // check if the timeslot exists
@@ -54,7 +54,7 @@ export class TimeslotsController {
 
   @Delete("/:id")
   @Returns(204)
-  @Returns(404).Description("Timeslot not found")
+  @(Returns(404).Description("Timeslot not found"))
   @Authorize({ scopes: ["timeslots"] })
   async deleteTimeslot(@PathParams("id") @Format(JsonFormatTypes.UUID) id: string) {
     // check if the timeslot exists

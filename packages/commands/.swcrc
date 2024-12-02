@@ -9,6 +9,9 @@
     "externalHelpers": true,
     "keepClassNames": true,
     "transform": {
+      "useDefineForClassFields": false,
+      "legacyDecorator": true,
+      "decoratorMetadata": true,
       "react": {
         "pragma": "React.createElement",
         "pragmaFrag": "React.Fragment",
